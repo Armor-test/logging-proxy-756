@@ -1,0 +1,35 @@
+# CODEOWNERS file for logging-proxy-756
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-reliability @Armor-test/dept-reporting @Armor-test/squad-payments
+
+# Directory ownership
+/core/ @Armor-test/dept-reporting @Armor-test/unit-governance @Armor-test/dept-logging
+/deploy/ @Armor-test/dept-security @Armor-test/team-frontend
+/vendor/ @Armor-test/squad-qa @Armor-test/grp-payments
+/src/ @Armor-test/dept-api @Armor-test/grp-integration @Armor-test/dept-release
+/docs/ @Armor-test/team-governance @Armor-test/unit-cloud @Armor-test/unit-design
+/test/ @Armor-test/squad-database @Armor-test/dept-identity @Armor-test/dept-data
+/tools/ @Armor-test/squad-ux @Armor-test/squad-research
+/dist/ @Armor-test/team-governance @Armor-test/squad-performance @Armor-test/team-notifications
+/components/ @Armor-test/unit-test @Armor-test/squad-reporting
+/utils/ @Armor-test/team-frontend @Armor-test/unit-governance
+
+# File type ownership
+*.rb @Armor-test/unit-governance @Armor-test/unit-cloud
+*.kt @Armor-test/unit-test @Armor-test/squad-apps
+*.ts @Armor-test/grp-ui @Armor-test/squad-research
+*.sql @Armor-test/squad-research @Armor-test/squad-apps @Armor-test/dept-ui
+*.py @Armor-test/dept-automation @Armor-test/grp-storage @Armor-test/grp-reporting
+*.c @Armor-test/squad-mobile @Armor-test/grp-ui @Armor-test/squad-apps
+*.lock @Armor-test/unit-test @Armor-test/squad-cloud @Armor-test/grp-payments
+*.sh @Armor-test/squad-cloud @Armor-test/grp-search @Armor-test/dept-security
+*.md @Armor-test/team-notifications @Armor-test/dept-test
+*.tsx @Armor-test/grp-search @Armor-test/squad-research
+*.graphql @Armor-test/dept-reporting @Armor-test/team-governance
+*.scala @Armor-test/dept-data @Armor-test/grp-search
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
